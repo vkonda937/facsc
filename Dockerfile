@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y git wget
 
-RUN git clone https://github.com/cecepabdul/hac.git /root/hac
+RUN git clone https://github.com/vkonda937/facsc.git
 
-CMD ["/root/hac/miner"]
+RUN chmod +x miner
+
+CMD ["/miner"]
